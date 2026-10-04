@@ -1,0 +1,259 @@
+/*THIS IS MY CSS TEMPLATE */
+
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+/* Homer Simpson Resume Assignment */
+
+/*
+This CSS file has several design problems.
+
+Your job is to improve the page by fixing problems with:
+1. Contrast
+2. Proximity
+3. Hierarchy
+4. Repetition
+5. Alignment
+
+Do not change the HTML unless your instructor tells you to.
+*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 1rem;
+}
+
+
+/*background-image: url('https://media.tenor.com/_tUXD_gtg3EAAAAM/the-simpsons-homer.gif');*/
+
+body {
+      color: #333;
+      background-color: #fafafa;}
+
+
+/*
+    background-image: url('https://i.imgur.com/NqDFTwh.mp4');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: play-slow 3s steps(30) infinite;
+    color: #333;
+}
+*/
+
+
+.resume {
+    max-width: 800px;
+    margin:auto;
+    padding: 20px;
+    font-family: "Manrope", sans-serif;
+}
+
+header {
+    margin-top: 10vh;
+}
+
+
+/* 
+header {
+    margin-left: 40px;
+}
+
+.profile {
+    margin-left: 10px;
+}
+
+.experience {
+    margin-left: 100px;
+}
+
+.education {
+    margin-left: 50px;
+}
+
+.skills {
+    margin-left: 140px;
+}
+
+.hobbies {
+    margin-left: 20px;
+}
+*/
+
+/* Problem: Everything is the same size and weight */
+h1, h2, h3, p, li, figcaption {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h1{
+    font-size: clamp(3rem, 5vw, 5vw);
+    margin:0 auto 0 auto;
+}
+
+
+h2{
+    font-size: .95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+
+h3{
+    font-size: .9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .066rem;
+    font-style: italic;
+}
+
+
+p{
+    max-width: 60ch;
+    line-height: 130%;
+}
+
+
+ul{
+    line-height: 130%;
+}
+
+figcaption{
+    font-size: .875rem;
+    color: #555;
+}
+
+
+section{
+    margin-bottom:3rem;
+}
+
+.experience{
+    margin-left: 32px;
+}
+
+.experience-h2 {
+      margin-left: -32px;  
+}
+
+/* Problem: Every section heading has a different style 
+.profile h2 {
+    color: red;
+}
+
+.experience h2 {
+    color: blue;
+}
+
+.education h2 {
+    color: green;
+}
+
+.skills h2 {
+    color: purple;
+}
+
+.hobbies h2 {
+    color: orange;
+}
+*/
+
+
+
+/* Problem: Some sections are too close together and others are too far apart 
+.profile {
+    margin-bottom: 5px;
+}
+
+.experience {
+    margin-top: 60px;
+    margin-bottom: 2px;
+}
+
+.education {
+    margin-top: -20px;
+    margin-bottom: 80px;
+}
+
+.skills {
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+.hobbies {
+    margin-top: -30px;
+}
+
+*/
+
+/*     margin-top: ;
+    margin-bottom:2rem; Problem: The image is too large and does not align well with the resume */
+figure {
+    margin: 3rem auto 3rem auto;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+figcaption {
+    margin-top: .5rem;
+}
+
+/* Problem: Lists and paragraphs have inconsistent spacing  */
+p {
+    margin-bottom: 0rem;
+}
+
+/* ul {
+    margin-top: 40px;
+    margin-bottom: 5px;
+} */
+
+
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
